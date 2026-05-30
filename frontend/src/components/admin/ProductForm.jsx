@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const ProductForm = ({ initialData, onSubmit, isLoading }) => {
   const [formData, setFormData] = useState({

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import AdminLayout from '../../components/admin/AdminLayout';
 import { Edit, Trash2, Plus } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const AdminProducts = () => {
   const [products, setProducts] = useState([]);

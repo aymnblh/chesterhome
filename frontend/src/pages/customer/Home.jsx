@@ -4,7 +4,7 @@ import Hero from '../../components/customer/Hero';
 import ProductCard from '../../components/customer/ProductCard';
 import Footer from '../../components/customer/Footer';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);

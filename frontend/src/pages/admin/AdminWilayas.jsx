@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AdminLayout from '../../components/admin/AdminLayout';
 import { Check, X, Search } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const AdminWilayas = () => {
   const [wilayas, setWilayas] = useState([]);

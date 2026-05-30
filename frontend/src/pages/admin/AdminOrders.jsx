@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AdminLayout from '../../components/admin/AdminLayout';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const AdminOrders = () => {
   const [orders, setOrders] = useState([]);

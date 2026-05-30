@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AdminLayout from '../../components/admin/AdminLayout';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const Dashboard = () => {
   const [stats, setStats] = useState({ products: 0, orders: 0, revenue: 0, pending: 0 });

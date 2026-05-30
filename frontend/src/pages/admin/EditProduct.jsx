@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import AdminLayout from '../../components/admin/AdminLayout';
 import ProductForm from '../../components/admin/ProductForm';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const EditProduct = () => {
   const { id } = useParams();

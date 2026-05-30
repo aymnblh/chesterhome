@@ -4,7 +4,7 @@ import { CartContext } from '../../context/CartContext';
 import Navbar from '../../components/customer/Navbar';
 import Footer from '../../components/customer/Footer';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 
 const ProductDetail = () => {
   const { id } = useParams();

@@ -3,7 +3,7 @@ import Navbar from '../../components/customer/Navbar';
 import ProductCard from '../../components/customer/ProductCard';
 import Footer from '../../components/customer/Footer';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://chesterhome.onrender.com';
 const categories = [
   { id: 'all', label: 'Tous' },
   { id: 'salon', label: 'Salon' },
