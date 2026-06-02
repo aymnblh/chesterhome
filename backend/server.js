@@ -14,7 +14,23 @@ const orderRoutes = require('./routes/orders');
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://chesterhome-1d94e.web.app',
+  'https://chesterhome-1d94e.firebaseapp.com',
+  'https://chesterhome.dz'
+];
+
+app.use(cors({ 
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }, 
+  credentials: true 
+}));
 app.use(express.json());
 
 const uploadsDir = path.join(__dirname, 'uploads');
